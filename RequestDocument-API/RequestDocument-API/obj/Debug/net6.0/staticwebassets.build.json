@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UJMgKOn4fHTVXMn4ngG3o+rc0oWH6zPPg+K6TQ/LLCo=",
+  "Source": "CIFO.CertifyDocument-API",
+  "BasePath": "_content/CIFO.CertifyDocument-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

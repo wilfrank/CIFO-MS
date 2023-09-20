@@ -1,0 +1,12 @@
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\SIFO.DAL.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\SIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\SIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\SIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\SIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\SIFO.DAL.dll
