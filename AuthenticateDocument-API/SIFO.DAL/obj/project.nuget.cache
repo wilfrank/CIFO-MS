@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "t8yV00GTxXmN2QFh9I05T55rX14l2Lb566RYpMxTL21EQ/g3NCAdwft0qF7XTyA2jZ5xU53ocTTtSFzuzdfGsQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS Granular\\AuthenticateDocument-API\\SIFO.DAL\\CIFO.DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mayra\\.nuget\\packages\\firebaseadmin\\2.4.0\\firebaseadmin.2.4.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\google.api.gax\\3.2.0\\google.api.gax.3.2.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\google.api.gax.rest\\3.2.0\\google.api.gax.rest.3.2.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\google.apis\\1.49.0\\google.apis.1.49.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\google.apis.auth\\1.49.0\\google.apis.auth.1.49.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\google.apis.core\\1.49.0\\google.apis.core.1.49.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\mayra\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
