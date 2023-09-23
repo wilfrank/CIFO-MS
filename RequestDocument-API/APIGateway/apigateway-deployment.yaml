@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment #Create application
+metadata:
+  name: apigateway-v2 #Deployment Name!!
+  labels:
+    app: apigateway
+    version: "1.0"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apigateway
+  template:
+    metadata:
+      labels:
+        app: apigateway
+        version: "1.0"
+    spec:
+      containers:
+        - name: apigateway
+          image: uk.icr.io/eafitns/gatewaymicroservice:v2
+          ports:
+            - name: http-server
+              containerPort: 5283

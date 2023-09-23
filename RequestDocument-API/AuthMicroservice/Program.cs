@@ -1,0 +1,30 @@
+using AuthMicroservice.Models;
+using AuthMicroservice.Services;
+using AuthMicroservice.Services.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+var appKey = builder.Configuration.GetSection("firestore.auth").Get<FirestoreModel>();
+builder.Services.AddScoped<IAuthService, AuthService>(aut => new AuthService(appKey.ApiKey));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

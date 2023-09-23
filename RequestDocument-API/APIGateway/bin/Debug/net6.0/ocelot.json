@@ -1,0 +1,91 @@
+{
+	"GlobalConfiguration": {
+		"BaseUrl": "http://localhost:5283"
+	},
+	"Routes": [
+		{
+			"UpstreamPathTemplate": "/gateway/bike/getall/{userKey}",
+			"UpstreamHttpMethod": [ "Get" ],
+			"DownstreamPathTemplate": "/api/bike/getall/{userKey}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 31801
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gateway/bike/ByUser/{userKey}",
+			"UpstreamHttpMethod": [ "Get" ],
+			"DownstreamPathTemplate": "/api/bike/getByUser/{userKey}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 31801
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gateway/bike/new",
+			"UpstreamHttpMethod": [ "Post" ],
+			"DownstreamPathTemplate": "/api/bike/new",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 31801
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gateway/bike/update",
+			"UpstreamHttpMethod": [ "Put" ],
+			"DownstreamPathTemplate": "/api/bike/update",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 31801
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gateway/bike/delete",
+			"UpstreamHttpMethod": [ "Put" ],
+			"DownstreamPathTemplate": "/api/bike/delete",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 31801
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gateway/auth/login/{email}/{password}",
+			"UpstreamHttpMethod": [ "get" ],
+			"DownstreamPathTemplate": "/api/auth/login/{email}/{password}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 30755
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gateway/auth/signin",
+			"UpstreamHttpMethod": [ "post" ],
+			"DownstreamPathTemplate": "/api/auth/SignIn",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "169.51.203.75",
+					"Port": 30755
+				}
+			]
+		}
+	]
+}

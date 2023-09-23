@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment #Create application
+metadata:
+  name: authdeployment #Deployment Name!!
+  labels:
+    app: auth
+    version: "1.0"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: auth
+  template:
+    metadata:
+      labels:
+        app: auth
+        version: "1.0"
+    spec:
+      containers:
+        - name: auth
+          image: uk.icr.io/eafitns/authmicroservice
+          ports:
+            - name: http-server
+              containerPort: 3002

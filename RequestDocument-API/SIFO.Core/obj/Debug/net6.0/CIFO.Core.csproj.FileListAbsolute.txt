@@ -10,3 +10,15 @@ C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\refint\CIFO.Core.dll
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.pdb
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\ref\CIFO.Core.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\bin\Debug\net6.0\CIFO.Core.deps.json
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\bin\Debug\net6.0\CIFO.Core.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\bin\Debug\net6.0\CIFO.Core.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.csproj.AssemblyReference.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.AssemblyInfoInputs.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.AssemblyInfo.cs
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.csproj.CoreCompileInputs.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\refint\CIFO.Core.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\CIFO.Core.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.Core\obj\Debug\net6.0\ref\CIFO.Core.dll

@@ -10,3 +10,15 @@ C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\CIFO.DAL.dll
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.pdb
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\CIFO.DAL.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.deps.json
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.AssemblyReference.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfoInputs.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfo.cs
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.CoreCompileInputs.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\CIFO.DAL.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\CIFO.DAL.dll
