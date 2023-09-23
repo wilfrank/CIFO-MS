@@ -1,3 +1,4 @@
 RequestDocument-API/.vs/SIFO/*
 RequestDocument-API/SIFO.Models/obj/*
 RequestDocument-API/RequestDocument-API/obj/*
+RequestDocument-API/SIFO.Core/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
