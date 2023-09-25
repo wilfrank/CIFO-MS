@@ -34,13 +34,13 @@ namespace CIFO.Services.CertifyDocument
             {
                 if (!string.IsNullOrEmpty(fileDTO.ImageString))
                 {
-                    //byte[] data = Convert.FromBase64String(fileDTO.ImageString);
-                    //MemoryStream stream = new MemoryStream();
-                    //stream.Write(data, 0, data.Length);
-                    //stream.Position = 0;
-                    
-                    //var key = await _storageService.Upload(fileDTO.UserId.GetValueOrDefault(), stream, fileDTO.ContentType, fileDTO.Name);
-                    var key = "https://firebasestorage.googleapis.com/v0/b/eafit-cifo.appspot.com/o/1256358953%2FDocumento.PDF_60dcdffe-2f0c-4eaa-a8dd-5b883ad20e19?alt=media&token=f2bfb809-84ab-4112-8bf3-e4ef572bc043";
+                    byte[] data = Convert.FromBase64String(fileDTO.ImageString);
+                    MemoryStream stream = new MemoryStream();
+                    stream.Write(data, 0, data.Length);
+                    stream.Position = 0;
+
+                    var key = await _storageService.Upload(fileDTO.UserId.GetValueOrDefault(), stream, fileDTO.ContentType, fileDTO.Name);
+                    //var key = "https://firebasestorage.googleapis.com/v0/b/eafit-cifo.appspot.com/o/1256358953%2FDocumento.PDF_60dcdffe-2f0c-4eaa-a8dd-5b883ad20e19?alt=media&token=f2bfb809-84ab-4112-8bf3-e4ef572bc043";
                     if (!string.IsNullOrEmpty(key))
                     {
                         DocumentModel document = new DocumentModel
