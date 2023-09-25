@@ -1,5 +1,6 @@
 ﻿using CIFO.Models.Models;
 using CIFO.Models.Util;
+using CIFO.Services.Document;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CIFO.RequestDocument_API.Controllers
@@ -9,10 +10,14 @@ namespace CIFO.RequestDocument_API.Controllers
     public class GetDocumentController : Controller
     {
         private readonly ILogger<SystemController> _logger;
+        private readonly IDocumentService _documentService;
 
-        public GetDocumentController(ILogger<SystemController> logger)
+
+        public GetDocumentController(ILogger<SystemController> logger,
+                                    IDocumentService documentService)
         {
             _logger = logger;
+            _documentService = documentService;
         }
 
 
@@ -23,11 +28,7 @@ namespace CIFO.RequestDocument_API.Controllers
         {
             try
             {
-                List<DocumentModel> documents = new List<DocumentModel>();
-
-                DocumentModel d = new DocumentModel { IdUser=1234567891, DocumentName="tarjeta profesional",Status="Autenticado"};
-                documents.Add(d);
-                return Ok(documents);
+                return Ok(await _documentService.GetDocumentsByUserId(userId));
             }
             catch (Exception ex)
             {

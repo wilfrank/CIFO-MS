@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.DataProtection.XmlEncryption;
 using CIFO.Core.Infraestructure;
-using CIFO.Services.Messages;
-using CIFO.Services.Storage;
+using CIFO.Services.Document;
+using CIFO.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,10 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddScoped<INotificationService, NotificationService>();
-builder.Services.AddScoped<IStorageService, StorageService>();
 builder.Services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
-builder.Services.AddScoped<IMessageProducer, MessageProducer>();
+builder.Services.AddScoped<IDocumentService, DocumentService>();
+builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

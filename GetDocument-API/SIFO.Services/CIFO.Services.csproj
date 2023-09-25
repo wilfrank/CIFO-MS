@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SIFO.Core\CIFO.Core.csproj" />
+    <ProjectReference Include="..\SIFO.DAL\CIFO.DAL.csproj" />
     <ProjectReference Include="..\SIFO.Models\CIFO.Models.csproj" />
   </ItemGroup>
 
