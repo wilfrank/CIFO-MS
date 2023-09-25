@@ -6,31 +6,47 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using System.Net;
+using CIFO.DAL.Repositories;
 
 namespace CIFO.Services.GovCarpeta
 {
     public class AuthenticationServices : IAuthenticationServices
     {
         private readonly IConfiguration _configuration;
+        private readonly IDocumentRepository _documentRepository;
         private string _baseAddress;
         private string _endpoint;
 
 
-        public AuthenticationServices(IConfiguration configuration)
+        public AuthenticationServices(IConfiguration configuration, IDocumentRepository documentRepository)
         {
             _configuration = configuration;
+            _documentRepository = documentRepository;
             _baseAddress = _configuration["GovCarpeta:BaseAddress"];
             _endpoint = _configuration["GovCarpeta:Endpoint"];
         }
 
-        public async Task<bool> AuthenticationDocument(AuthenticateDocumentModel document)
+        public async Task<bool> AuthenticationDocument(AuthenticateDocumentCompleteModel document)
         {
-            var json = JsonSerializer.Serialize(document);
-            var body = new StringContent(json, Encoding.UTF8, "application/json");
+            try
+            {
+                var json = JsonSerializer.Serialize(document.AuthenticateModel);
+                var body = new StringContent(json, Encoding.UTF8, "application/json");
 
-            await PutMethod(body);
+                await PutMethod(body);
 
-            return true;
+                document.DocumentModel.Status = "Autenticado";
+
+                await _documentRepository.UpdateDocument(document.DocumentModel);
+
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
         }
 
         private async Task<dynamic> PutMethod(StringContent body)

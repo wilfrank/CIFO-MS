@@ -22,8 +22,8 @@ namespace CIFO.RequestDocument_API.Controllers
 
         [HttpPut("AuthenticateDocument")]
         [ProducesResponseType(typeof(ApiException), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(Task<AuthenticateDocumentModel>), StatusCodes.Status200OK)]
-        public async Task<ActionResult> AuthenticateDocument(AuthenticateDocumentModel archivo)
+        [ProducesResponseType(typeof(Task<AuthenticateDocumentCompleteModel>), StatusCodes.Status200OK)]
+        public async Task<ActionResult> AuthenticateDocument(AuthenticateDocumentCompleteModel archivo)
         {
             try
             {

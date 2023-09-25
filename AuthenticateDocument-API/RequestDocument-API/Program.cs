@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.DataProtection.XmlEncryption;
 using CIFO.Core.Infraestructure;
 using CIFO.Services.Messages;
 using CIFO.Services.GovCarpeta;
+using CIFO.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
 builder.Services.AddScoped<IAuthenticationServices, AuthenticationServices>();
+builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
