@@ -4,6 +4,8 @@ using CIFO.Services.CertifyDocument;
 using CIFO.Services.Messages;
 using CIFO.Services.Storage;
 using CIFO.Services.GovCarpeta;
+using CIFO.Services.Document;
+using CIFO.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,8 @@ builder.Services.AddScoped<IStorageService, StorageService>();
 builder.Services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
 builder.Services.AddScoped<IAuthenticationServices, AuthenticationServices>();
 builder.Services.AddScoped<IMessageProducer, MessageProducer>();
+builder.Services.AddScoped<IDocumentService, DocumentService>();
+builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

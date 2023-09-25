@@ -11,7 +11,7 @@ namespace CIFO.Models.Models
     {
         public int? idCitizen { get; set; }
         public string? UrlDocument { get; set; }
-        public string? operatorName { get; set; }
+        public string? documentTitle { get; set; }
        
     }
 

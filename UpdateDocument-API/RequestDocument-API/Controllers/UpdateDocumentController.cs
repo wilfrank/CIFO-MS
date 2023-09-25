@@ -27,7 +27,7 @@ namespace CIFO.RequestDocument_API.Controllers
         {
             try
             {
-                return Ok(_CertifyDocumentService.UpdateDocument(archivo));
+                return Ok( await _CertifyDocumentService.UpdateDocument(archivo));
             }
             catch (Exception ex)
             {

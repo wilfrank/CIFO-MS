@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sisN++wABw+kDSPHslLp0ZX6YOiR0v6uuK9DjHKKRMdm1/an072HL2OtQyZ+cmWXRt8MDlUbfBt8spIuhWKlPQ==",
+  "dgSpecHash": "/ar1trflVpe/izIDhTRwM8I9d/dhBu0O7NkLxqxEKKPQ7VlIKTqc1H523mMGfJ9o5ykSyOsJAYFw/e/xCym/1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS Granular\\UpdateDocument-API\\SIFO.Core\\CIFO.Core.csproj",
+  "projectFilePath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\UpdateDocument-API\\SIFO.Core\\CIFO.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mayra\\.nuget\\packages\\firebaseadmin\\2.4.0\\firebaseadmin.2.4.0.nupkg.sha512",
     "C:\\Users\\mayra\\.nuget\\packages\\firebaseauth\\2.0.6\\firebaseauth.2.0.6.nupkg.sha512",
