@@ -1,8 +1,12 @@
-﻿namespace Cifo.Model
+﻿using System.Text.Json.Serialization;
+
+namespace Cifo.Model
 {
     public class OperatorDto
     {
-        public int? OperatorId { get; set; }
-        public string? OperatorName { get; set; }
+        [JsonPropertyName("operatorId")]
+        public int? operatorId { get; set; }
+        [JsonPropertyName("operatorName")]
+        public string? operatorName { get; set; }
     }
 }

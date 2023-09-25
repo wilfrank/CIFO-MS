@@ -16,8 +16,9 @@ namespace Auth.API
             builder.Services.AddSingleton(FirebaseApp.Create());
             var firestore = builder.Configuration.GetSection("firestore.auth").Get<FirestoreModel>();
             var govFolderUrl = builder.Configuration.GetSection("govCarpeta.settings").Get<GovFolderUrl>();
+            var _operator = builder.Configuration.GetSection("govCarpeta.operator").Get<OperatorDto>();
             builder.Services.AddScoped<IFirebaseAuthService, FirebaseAuthService>(auth => new FirebaseAuthService(firestore.ApiKey));
-            builder.Services.AddSingleton<IGovFolderService, GovFolderService>(gov => new GovFolderService(govFolderUrl));
+            builder.Services.AddSingleton<IGovFolderService, GovFolderService>(gov => new GovFolderService(govFolderUrl, _operator));
 
             builder.Services.ConfigurationAuth(firestore);
             builder.Services.AddControllers();

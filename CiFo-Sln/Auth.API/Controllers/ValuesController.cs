@@ -1,4 +1,5 @@
 ﻿using Cifo.Model;
+using Cifo.Model.GovFolder;
 using Cifo.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -48,6 +49,14 @@ namespace Auth.API.Controllers
             {
                 return BadRequest();
             }
+            var citizen = new CitizenDto
+            {
+                address = user.Address,
+                email = user.Email,
+                name = $"{user.FirstName} {user.LastName}",
+                id = int.Parse(user.IdentityNumber)
+            };
+            var userGovFolder = await _govFolderService.RegisterCitizen(citizen);
             var userData = await _firebaseAuth.SignUp(user);
             return Ok(userData);
         }
