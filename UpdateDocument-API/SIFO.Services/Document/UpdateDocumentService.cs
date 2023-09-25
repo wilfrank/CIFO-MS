@@ -51,8 +51,10 @@ namespace CIFO.Services.CertifyDocument
                             URL = key
                         };
 
-                        //await _documentService.SaveDocument(document);
-                        
+                        var path= await _documentService.SaveDocument(document);
+
+                        document.PathBD = path;
+
                         AuthenticateDocumentModel model = new AuthenticateDocumentModel
                         {
                             idCitizen = fileDTO.UserId,
@@ -60,7 +62,12 @@ namespace CIFO.Services.CertifyDocument
                             documentTitle = fileDTO.Name.Replace(".","")
                         };
 
-                        _authenticationServices.AuthenticationDocument(model);
+                        AuthenticateDocumentCompleteModel modelAut = new AuthenticateDocumentCompleteModel
+                        {
+                            AuthenticateModel = model,
+                            DocumentModel = document
+                        };
+                        _authenticationServices.AuthenticationDocument(modelAut);
 
 
                     }

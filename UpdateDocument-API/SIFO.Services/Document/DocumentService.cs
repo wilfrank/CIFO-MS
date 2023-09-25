@@ -16,7 +16,7 @@ namespace CIFO.Services.Document
         {
             _documentRepository = documentRepository;
         }
-        public async Task<bool> SaveDocument(DocumentModel document)
+        public async Task<string> SaveDocument(DocumentModel document)
         {
             return await _documentRepository.SaveDocument(document);
         }

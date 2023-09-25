@@ -23,7 +23,7 @@ namespace CIFO.Services.GovCarpeta
             _endpoint = _configuration["Authenticate:Endpoint"];
         }
 
-        public async Task<bool> AuthenticationDocument(AuthenticateDocumentModel document)
+        public async Task<bool> AuthenticationDocument(AuthenticateDocumentCompleteModel document)
         {
             var json = JsonSerializer.Serialize(document);
             var body = new StringContent(json, Encoding.UTF8, "application/json");

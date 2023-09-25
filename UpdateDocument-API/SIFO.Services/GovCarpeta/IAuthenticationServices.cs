@@ -10,6 +10,6 @@ namespace CIFO.Services.GovCarpeta
 {
     public interface IAuthenticationServices
     {
-        Task<bool> AuthenticationDocument(AuthenticateDocumentModel document);
+        Task<bool> AuthenticationDocument(AuthenticateDocumentCompleteModel document);
     }
 }

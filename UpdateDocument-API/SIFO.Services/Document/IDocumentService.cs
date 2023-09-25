@@ -9,6 +9,6 @@ namespace CIFO.Services.Document
 {
     public interface IDocumentService
     {
-        Task<bool> SaveDocument(DocumentModel document);
+        Task<string> SaveDocument(DocumentModel document);
     }
 }

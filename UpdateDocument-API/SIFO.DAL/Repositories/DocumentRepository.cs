@@ -35,14 +35,15 @@ namespace CIFO.DAL.Repositories
             _client = new FireSharp.FirebaseClient(_config);
         }
 
-        public async Task<bool> SaveDocument(DocumentModel document)
+        public async Task<string> SaveDocument(DocumentModel document)
         {
             try
             {
                 Guid guid = Guid.NewGuid();
-                await _client.SetAsync(document.IdUser.ToString()+"/"+document.DocumentName.Replace(".","")+guid, document);
+                var path = document.IdUser.ToString() + "/" + document.DocumentName.Replace(".", "") + guid;
+                await _client.SetAsync(path, document);
 
-                return true;
+                return path;
             }
             catch (Exception ex)
             {

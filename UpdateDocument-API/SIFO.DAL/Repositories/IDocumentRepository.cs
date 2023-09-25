@@ -9,6 +9,6 @@ namespace CIFO.DAL.Repositories
 {
     public interface IDocumentRepository
     {
-        Task<bool> SaveDocument(DocumentModel document);
+        Task<string> SaveDocument(DocumentModel document);
     }
 }
