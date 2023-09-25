@@ -38,7 +38,7 @@ namespace CIFO.DAL.Repositories
         {
             try
             {
-                await _client.SetAsync(document.IdUser.ToString() + "/" + document.DocumentName.Replace(".", ""), document);
+                await _client.SetAsync(document.PathBD, document);
 
                 return true;
             }

@@ -33,11 +33,12 @@ namespace CIFO.Services.GovCarpeta
                 var json = JsonSerializer.Serialize(document.AuthenticateModel);
                 var body = new StringContent(json, Encoding.UTF8, "application/json");
 
-                await PutMethod(body);
+                if (await PutMethod(body))
+                {
+                    document.DocumentModel.Status = "Autenticado";
 
-                document.DocumentModel.Status = "Autenticado";
-
-                await _documentRepository.UpdateDocument(document.DocumentModel);
+                    await _documentRepository.UpdateDocument(document.DocumentModel);
+                }
 
                 return true;
             }
@@ -49,7 +50,7 @@ namespace CIFO.Services.GovCarpeta
            
         }
 
-        private async Task<dynamic> PutMethod(StringContent body)
+        private async Task<bool> PutMethod(StringContent body)
         {
             try
             {
@@ -66,7 +67,7 @@ namespace CIFO.Services.GovCarpeta
 
                 client.Dispose();
 
-                return JsonSerializer.Deserialize<ExpandoObject>(content);
+                return true;
             }
             catch (Exception ex)
             {
