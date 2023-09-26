@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SIFO.RequestDocument-API.props" />
+</Project>
