@@ -1,0 +1,15 @@
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.deps.json
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\CiFo.Model.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\CiFo.Model.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.AssemblyReference.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.AssemblyInfoInputs.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.AssemblyInfo.cs
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.CoreCompileInputs.cache
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.CopyComplete
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\refint\Cifo.Service.dll
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.pdb
+C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\ref\Cifo.Service.dll
