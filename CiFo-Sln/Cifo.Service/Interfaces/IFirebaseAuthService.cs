@@ -1,11 +1,14 @@
 ﻿using Cifo.Model;
+using CiFo.Model;
+using Firebase.Auth;
+
 namespace Cifo.Service.Interfaces
 {
     public interface IFirebaseAuthService
     {
-        Task<string?> SignUp(UserModel user);
+        Task<User?> SignUp(UserModel user);
 
-        Task<string?> Login(UserModel user);
+        Task<FirebaseAuthLink?> Login(SignUpModel user);
 
         void SingOut();
     }

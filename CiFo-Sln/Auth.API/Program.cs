@@ -2,8 +2,13 @@ using Cifo.Model;
 using Cifo.Service;
 using Cifo.Service.Interfaces;
 using FirebaseAdmin;
-using Cifo.Service.Extensions;
 using Cifo.Model.GovFolder;
+using Google.Cloud.Firestore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Logging;
+using Microsoft.IdentityModel.Tokens;
+using Google.Apis.Auth.OAuth2;
+using Cifo.Service.Extensions;
 
 namespace Auth.API
 {
@@ -13,14 +18,23 @@ namespace Auth.API
         {
             var builder = WebApplication.CreateBuilder(args);
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "eafit-cifo-firebase.json");
-            builder.Services.AddSingleton(FirebaseApp.Create());
             var firestore = builder.Configuration.GetSection("firestore.auth").Get<FirestoreModel>();
+            var fireBaseApp = FirebaseApp.Create(new AppOptions()
+            {
+                Credential = GoogleCredential.FromJson(builder.Configuration.GetValue<string>("FIREBASE_CONFIG"))
+            }, firestore.ProjectName);
+            //var fireBaseApp= FirebaseApp.Create()
             var govFolderUrl = builder.Configuration.GetSection("govCarpeta.settings").Get<GovFolderUrl>();
             var _operator = builder.Configuration.GetSection("govCarpeta.operator").Get<OperatorDto>();
+            builder.Services.AddSingleton(fireBaseApp);
+            builder.Services.AddSingleton(FirestoreDb.Create(firestore.ProjectName));
             builder.Services.AddScoped<IFirebaseAuthService, FirebaseAuthService>(auth => new FirebaseAuthService(firestore.ApiKey));
             builder.Services.AddSingleton<IGovFolderService, GovFolderService>(gov => new GovFolderService(govFolderUrl, _operator));
+            builder.Services.AddScoped<IUserService, UserService>();
 
             builder.Services.ConfigurationAuth(firestore);
+            // Add services to the container.
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

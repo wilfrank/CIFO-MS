@@ -1,6 +1,6 @@
 ﻿namespace Cifo.Model.GovFolder
 {
-    public class DocumentDto
+    public class DocumentGcDto
     {
         public int IdCitizen { get; set; }
         public string? UrlDocument { get; set; }

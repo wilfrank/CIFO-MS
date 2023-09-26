@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Cifo.Service.Extensions
@@ -10,6 +11,7 @@ namespace Cifo.Service.Extensions
     {
         public static void ConfigurationAuth(this IServiceCollection services, FirestoreModel firestore)
         {
+            IdentityModelEventSource.ShowPII = true;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -24,7 +26,7 @@ namespace Cifo.Service.Extensions
                     };
                 });
             // Add services to the container.
-            services.AddAuthorization();
+            //services.AddAuthorization();
         }
     }
 }

@@ -1,12 +1,12 @@
 ﻿using Cifo.Model;
 using Cifo.Service.Interfaces;
+using CiFo.Model;
 using Firebase.Auth;
 
 namespace Cifo.Service
 {
     public class FirebaseAuthService : IFirebaseAuthService
     {
-        //private readonly FirebaseAuthClient _firebaseAuth;
         private readonly FirebaseAuthProvider _provider;
         public FirebaseAuthService(string apiKey)
         {
@@ -14,16 +14,16 @@ namespace Cifo.Service
             _provider = new FirebaseAuthProvider(new FirebaseConfig(apiKey));
         }
 
-        public async Task<string?> SignUp(UserModel user)
+        public async Task<User?> SignUp(UserModel user)
         {
             var userCredentials = await _provider.CreateUserWithEmailAndPasswordAsync(user.Email, user.Password, user.UserName, true);
-            return userCredentials is null ? null : userCredentials.User.LocalId;
+            return userCredentials is null ? null : userCredentials.User;
         }
 
-        public async Task<string?> Login(UserModel user)
+        public async Task<FirebaseAuthLink?> Login(SignUpModel user)
         {
             var userCredentials = await _provider.SignInWithEmailAndPasswordAsync(user.Email, user.Password);
-            return userCredentials == null ? null : userCredentials.User.LocalId;
+            return userCredentials == null ? null : userCredentials;
         }
 
         public void SingOut()

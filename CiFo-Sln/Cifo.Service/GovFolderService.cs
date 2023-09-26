@@ -22,6 +22,11 @@ namespace Cifo.Service
             throw new NotImplementedException();
         }
 
+        public Task<DocumentGcDto?> AuthenticateDocument(DocumentGcDto document)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<CitizenDto> RegisterCitizen(CitizenDto citizen)
         {
             citizen.operatorId = _operator.operatorId;

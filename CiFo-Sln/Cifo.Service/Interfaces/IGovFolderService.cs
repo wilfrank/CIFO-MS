@@ -7,6 +7,6 @@ namespace Cifo.Service.Interfaces
         Task<string?> ValidateCitizen(string citizenId);
         Task<CitizenDto> RegisterCitizen(CitizenDto citizen);
         Task<CitizenDto> UnregisterCitizen(CitizenDto citizenDto);
-        Task<DocumentDto?> AuthenticateDocument(DocumentDto document);
+        Task<DocumentGcDto?> AuthenticateDocument(DocumentGcDto document);
     }
 }
