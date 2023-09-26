@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SIFO.CertifyDocument-API.props" />
+</Project>

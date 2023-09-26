@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DTD18TzjZWycZXd/6x7p+SUGEPJxlpfOgARwNE2iAUo=",
+  "Source": "CIFO.AuthenticateDocument-API",
+  "BasePath": "_content/CIFO.AuthenticateDocument-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

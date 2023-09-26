@@ -1,0 +1,51 @@
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\RequestDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS Granular\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.Models.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\bin\Debug\net6.0\CIFO.Models.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.csproj.CopyComplete
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\refint\CIFO.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\CIFO.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\SIFO.DAL\obj\Debug\net6.0\ref\CIFO.DAL.dll
