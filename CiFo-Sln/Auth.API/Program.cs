@@ -4,9 +4,6 @@ using Cifo.Service.Interfaces;
 using FirebaseAdmin;
 using Cifo.Model.GovFolder;
 using Google.Cloud.Firestore;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Logging;
-using Microsoft.IdentityModel.Tokens;
 using Google.Apis.Auth.OAuth2;
 using Cifo.Service.Extensions;
 
