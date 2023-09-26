@@ -1,7 +1,6 @@
 ﻿using Cifo.Model;
 using Cifo.Model.GovFolder;
 using Cifo.Service.Interfaces;
-using CiFo.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,13 +8,9 @@ namespace Auth.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SignUpController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
         private readonly ILogger<SignUpController> _logger;
         private readonly IFirebaseAuthService _firebaseAuth;
         private readonly IGovFolderService _govFolderService;
@@ -29,23 +24,16 @@ namespace Auth.API.Controllers
             _govFolderService = govFolderService;
             _userService = userService;
         }
-
-        [HttpGet]
-        [Route("GetByKey")]
-        [Authorize]
-        public async Task<IActionResult> Get(string key)
-        {
-            var user = await _userService.GetById(key);
-            return Ok(user);
-        }
         [HttpPost]
-        [Route("SignUp")]
+        [Route("")]
         [AllowAnonymous]
         public async Task<IActionResult> SignUp(UserModel user)
         {
+            _logger.LogInformation($"Siging up user {user.Email}..");
             var validate = await _govFolderService.ValidateCitizen(user.IdentityNumber);
             if (!string.IsNullOrEmpty(validate))
             {
+                _logger.LogInformation($"Siging up user Error {validate}..");
                 return BadRequest(validate);
             }
             var citizen = new CitizenDto
@@ -64,15 +52,6 @@ namespace Auth.API.Controllers
                 await _userService.CreateAsync(user);
             }
             return Ok(userData);
-        }
-
-        [HttpPost]
-        [Route("Login")]
-        [AllowAnonymous]
-        public async Task<IActionResult> Login(SignUpModel user)
-        {
-            var _userFb = await _firebaseAuth.Login(user);
-            return Ok(_userFb);
         }
     }
 }

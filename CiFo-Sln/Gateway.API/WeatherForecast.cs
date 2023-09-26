@@ -1,4 +1,4 @@
-namespace Auth.API
+namespace Gateway.API
 {
     public class WeatherForecast
     {

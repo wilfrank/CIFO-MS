@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FkQEe9oQ1qn13rn9qJKs3ttvS8DEY2FaGSJRUKEfLiI=",
+  "Hash": "VDDX3RUxTOwBCyTv0rBIlBbVd6b0kBd3GJGPgpseUoM=",
   "Source": "Auth.API",
   "BasePath": "_content/Auth.API",
   "Mode": "Default",
@@ -11,11 +11,11 @@
       "Version": 2,
       "Source": "Auth",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework;RuntimeIdentifier",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework;RuntimeIdentifier"
     }
   ],
   "DiscoveryPatterns": [],

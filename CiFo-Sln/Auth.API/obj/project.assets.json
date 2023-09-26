@@ -3352,6 +3352,7 @@
         "dependencies": {
           "Cifo.Model": "1.0.0",
           "Firebase.Auth": "1.0.0",
+          "FirebaseAdmin": "2.4.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.22",
           "Microsoft.Azure.DocumentDB.Core": "2.20.0",
           "Microsoft.IdentityModel.Tokens": "6.10.0"

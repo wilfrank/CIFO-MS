@@ -2,18 +2,15 @@
 using Cifo.Service.Interfaces;
 using Cifo.Service.Repository;
 using Google.Cloud.Firestore;
-using Microsoft.Azure.Documents;
 
 namespace Cifo.Service
 {
     public class UserService : FirebaseDbRepository<UserModel>, IUserService
     {
         private readonly FirestoreDb db;
-        private readonly IFirebaseAuthService firebaseAuthSvc;
-        public UserService(FirestoreDb _db, IFirebaseAuthService _firebaseAuthService) : base(_db)
+        public UserService(FirestoreDb _db) : base(_db)
         {
             db = _db;
-            firebaseAuthSvc = _firebaseAuthService;
         }
         public async Task<UserModel> CreateAsync(UserModel user)
         {
