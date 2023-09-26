@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SIFO.DAL/1.0.0": {
+        "runtime": {
+          "SIFO.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SIFO.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
