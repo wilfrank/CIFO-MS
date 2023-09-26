@@ -1,0 +1,7 @@
+RequestDocument-API/.vs/SIFO/*
+RequestDocument-API/SIFO.Models/obj/*
+RequestDocument-API/RequestDocument-API/obj/*
+RequestDocument-API/SIFO.Core/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+RequestDocument-API/SIFO.Core/obj/
+RequestDocument-API/SIFO.Services/obj/
+/CiFo-Sln/.vs/CiFo-Sln/FileContentIndex
