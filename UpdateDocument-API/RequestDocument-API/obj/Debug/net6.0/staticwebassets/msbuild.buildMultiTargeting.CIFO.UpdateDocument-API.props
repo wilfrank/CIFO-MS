@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CIFO.UpdateDocument-API.props" />
+</Project>
