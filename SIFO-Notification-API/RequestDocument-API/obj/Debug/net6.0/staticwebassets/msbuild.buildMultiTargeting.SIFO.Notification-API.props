@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SIFO.Notification-API.props" />
+</Project>
