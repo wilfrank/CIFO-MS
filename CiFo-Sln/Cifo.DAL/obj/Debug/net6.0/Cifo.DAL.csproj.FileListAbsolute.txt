@@ -1,0 +1,15 @@
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\bin\Debug\net6.0\Cifo.DAL.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\bin\Debug\net6.0\Cifo.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\bin\Debug\net6.0\Cifo.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\bin\Debug\net6.0\Cifo.Model.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\bin\Debug\net6.0\Cifo.Model.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.csproj.CopyComplete
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\refint\Cifo.DAL.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\Cifo.DAL.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.DAL\obj\Debug\net6.0\ref\Cifo.DAL.dll

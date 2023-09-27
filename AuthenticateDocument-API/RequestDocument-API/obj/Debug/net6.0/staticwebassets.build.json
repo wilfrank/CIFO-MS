@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "DTD18TzjZWycZXd/6x7p+SUGEPJxlpfOgARwNE2iAUo=",
-  "Source": "CIFO.AuthenticateDocument-API",
-  "BasePath": "_content/CIFO.AuthenticateDocument-API",
+  "Hash": "PyexvbAC0FLf4WugSBNQyRDmGx2D3erSd3JNKpBFkKE=",
+  "Source": "AuthenticateDocument-API",
+  "BasePath": "_content/AuthenticateDocument-API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

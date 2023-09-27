@@ -1,11 +1,8 @@
-using Microsoft.AspNetCore.DataProtection.XmlEncryption;
-using CIFO.Core.Infraestructure;
-using CIFO.Services.CertifyDocument;
-using CIFO.Services.Messages;
-using CIFO.Services.Storage;
-using CIFO.Services.GovCarpeta;
-using CIFO.Services.Document;
-using CIFO.DAL.Repositories;
+using Cifo.Model;
+using Cifo.Model.GovFolder;
+using Cifo.Service.Extensions;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,14 +11,26 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddScoped<INotificationService, NotificationService>();
-builder.Services.AddScoped<IUpdateDocumentService, UpdateDocumentService>();
-builder.Services.AddScoped<IStorageService, StorageService>();
-builder.Services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
-builder.Services.AddScoped<IAuthenticationServices, AuthenticationServices>();
-builder.Services.AddScoped<IMessageProducer, MessageProducer>();
-builder.Services.AddScoped<IDocumentService, DocumentService>();
-builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
+//builder.Services.AddScoped<INotificationService, NotificationService>();
+//builder.Services.AddScoped<IUpdateDocumentService, UpdateDocumentService>();
+//builder.Services.AddScoped<IStorageService, StorageService>();
+//builder.Services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
+//builder.Services.AddScoped<IAuthenticationServices, AuthenticationServices>();
+//builder.Services.AddScoped<IMessageProducer, MessageProducer>();
+//builder.Services.AddScoped<IDocumentService, DocumentService>();
+//builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
+
+Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "eafit-cifo-firebase.json");
+var firestore = builder.Configuration.GetSection("firestore.auth").Get<FirestoreModel>();
+var fireBaseApp = FirebaseApp.Create(new AppOptions()
+{
+    Credential = GoogleCredential.FromJson(builder.Configuration.GetValue<string>("FIREBASE_CONFIG"))
+}, firestore.ProjectName);
+//var fireBaseApp= FirebaseApp.Create()
+var govFolderUrl = builder.Configuration.GetSection("govCarpeta.settings").Get<GovFolderUrl>();
+var _operator = builder.Configuration.GetSection("govCarpeta.operator").Get<OperatorDto>();
+builder.Services.ConfigurationCifoApp(fireBaseApp, firestore, govFolderUrl, _operator);
+builder.Services.ConfigurationAuth(firestore);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -35,9 +44,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();

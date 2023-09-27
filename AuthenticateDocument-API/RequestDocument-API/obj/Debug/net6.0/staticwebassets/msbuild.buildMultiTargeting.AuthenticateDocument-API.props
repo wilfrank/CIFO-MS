@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AuthenticateDocument-API.props" />
+</Project>

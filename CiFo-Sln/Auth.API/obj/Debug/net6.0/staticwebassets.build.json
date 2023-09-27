@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "VDDX3RUxTOwBCyTv0rBIlBbVd6b0kBd3GJGPgpseUoM=",
+  "Hash": "9qlxsiSAFE8kK9DGeqkhaJXnOPkSpCJfaBrYFAZYv1c=",
   "Source": "Auth.API",
   "BasePath": "_content/Auth.API",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Auth\\Auth.csproj",
-      "Version": 2,
-      "Source": "Auth",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework;RuntimeIdentifier",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework;RuntimeIdentifier"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
   "Assets": []
 }

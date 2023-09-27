@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SIFO.Controllers;
-using SIFO.Models.Util;
-using SIFO.Services.Messages;
+﻿using Cifo.Model.Util;
+using Cifo.Service.Messages;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace SIFO.RequestDocument_API.Controllers
 {
@@ -9,11 +9,11 @@ namespace SIFO.RequestDocument_API.Controllers
     [ApiController]
     public class NotificationController : Controller
     {
-        private readonly ILogger<SystemController> _logger; 
+        private readonly ILogger _logger; 
         private readonly INotificationService _notificationService;
 
         public NotificationController(
-           ILogger<SystemController> logger,
+           ILogger logger,
            INotificationService notificationService
            )
         {

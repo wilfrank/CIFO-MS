@@ -1,8 +1,12 @@
 ﻿using Cifo.Model;
+using Cifo.Model.Document;
 using Cifo.Model.GovFolder;
 using Cifo.Service.Interfaces;
 using Newtonsoft.Json;
+using System.Dynamic;
+using System.Net.Http.Headers;
 using System.Text;
+using static Google.Rpc.Context.AttributeContext.Types;
 
 namespace Cifo.Service
 {
@@ -17,14 +21,35 @@ namespace Cifo.Service
             _httpClient = new HttpClient() { BaseAddress = new Uri(_govFolder?.UrlBase) };
             _operator = @operator;
         }
-        public Task<DocumentDto?> AuthenticateDocument(DocumentDto document)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task<DocumentGcDto?> AuthenticateDocument(DocumentGcDto document)
+        public async Task<bool> AuthenticationDocument(AuthenticateDocumentCompleteModel document)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var json = JsonConvert.SerializeObject(document.AuthenticateModel);
+                var body = new StringContent(json, Encoding.UTF8, "application/json");
+                var jsonData = JsonConvert.SerializeObject(body);
+                var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                var request = await _httpClient.PostAsync(_govFolder.UrlAuthenticateDoc, data);
+                var result = await request.Content.ReadAsStringAsync();
+
+                if (result.Contains("Error al"))
+                {
+                    throw new Exception($"Error autenticar documento - {result}");
+                }
+
+                document.DocumentModel.Status = "Autenticado";
+
+               // await _documentRepository.UpdateDocument(document.DocumentModel);
+
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         public async Task<CitizenDto> RegisterCitizen(CitizenDto citizen)
@@ -53,5 +78,6 @@ namespace Cifo.Service
             var response = await request.Content.ReadAsStringAsync();
             return response;
         }
+      
     }
 }
