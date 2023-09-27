@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CIFO.RequestDocument_API.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     [Authorize]
     public class UpdateDocumentController : Controller
@@ -17,7 +17,7 @@ namespace CIFO.RequestDocument_API.Controllers
         private readonly ILogger _logger;
         private readonly IUpdateDocumentService _CertifyDocumentService;
 
-        public UpdateDocumentController(ILogger logger,
+        public UpdateDocumentController(ILogger<UpdateDocumentController> logger,
                                          IUpdateDocumentService certifyDocument)
         {
             _CertifyDocumentService = certifyDocument;
@@ -25,7 +25,8 @@ namespace CIFO.RequestDocument_API.Controllers
         }
 
 
-        [HttpPost("UpdateDocument")]
+        [HttpPost]
+        [Route("UpdateDocument")]
         [ProducesResponseType(typeof(ApiException), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(Task<FileDataDTO>), StatusCodes.Status200OK)]
         public async Task<ActionResult> UpdateDocument(FileDataDTO archivo)

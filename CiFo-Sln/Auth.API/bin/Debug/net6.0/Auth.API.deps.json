@@ -1528,14 +1528,6 @@
         "runtime": {
           "Cifo.Service.dll": {}
         }
-      },
-      "Cifo.DAL/1.0.0.0": {
-        "runtime": {
-          "Cifo.DAL.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -2712,11 +2704,6 @@
     },
     "Cifo.Service/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Cifo.DAL/1.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

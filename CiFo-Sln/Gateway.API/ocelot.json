@@ -38,6 +38,53 @@
 					"Port": 5265
 				}
 			]
+		},
+		{
+			"UpstreamPathTemplate": "/gw/cifo/SendNotification",
+			"UpstreamHttpMethod": [ "POST" ],
+			"DownstreamPathTemplate": "/api/Notification/SendNotification",
+			"DownstreamScheme": "https",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 7152
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gw/cifo/UpdateDocument",
+			"UpstreamHttpMethod": [ "POST" ],
+			"DownstreamPathTemplate": "/api/UpdateDocument/UpdateDocument",
+			"DownstreamScheme": "https",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 7153
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gw/cifo/AuthenticateDocument",
+			"UpstreamHttpMethod": [ "PUT" ],
+			"DownstreamPathTemplate": "/api/AuthenticateDocument/AuthenticateDocument",
+			"DownstreamScheme": "https",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 7154
+				}
+			]
+		},
+		{
+			"UpstreamPathTemplate": "/gw/cifo/AuthenticateDocumentGC",
+			"UpstreamHttpMethod": [ "PUT" ],
+			"DownstreamPathTemplate": "/apis/authenticateDocument",
+			"DownstreamScheme": "https",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "govcarpeta-76300fb42a5a.herokuapp.com"
+				}
+			]
 		}
 	]
 

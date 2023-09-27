@@ -1,19 +1,22 @@
-﻿using Cifo.Model.Util;
+﻿using Cifo.Model.Messages;
+using Cifo.Model.Util;
 using Cifo.Service.Messages;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace SIFO.RequestDocument_API.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class NotificationController : Controller
     {
         private readonly ILogger _logger; 
         private readonly INotificationService _notificationService;
 
         public NotificationController(
-           ILogger logger,
+           ILogger<NotificationController> logger,
            INotificationService notificationService
            )
         {
@@ -21,14 +24,15 @@ namespace SIFO.RequestDocument_API.Controllers
             _notificationService = notificationService;
         }
 
-        [HttpGet("SendNotification/{email}/{subject}/{emailText}")]
+        [HttpPost]
+        [Route("SendNotification")]
         [ProducesResponseType(typeof(ApiException), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(Task<List<int>>), StatusCodes.Status200OK)]
-        public async Task<ActionResult> SendNotification(string email,string subject, string emailText)
+        public async Task<ActionResult> SendNotification(EmailModel emailModel)
         {
             try
             {
-                _notificationService.CreateAndSendEmailNotificationForUserAsync(emailText, email, subject);
+                _notificationService.CreateAndSendEmailNotificationForUserAsync(emailModel.EmailText, emailModel.Email, emailModel.Subject);
                 return Ok();
             }
             catch (Exception ex)
