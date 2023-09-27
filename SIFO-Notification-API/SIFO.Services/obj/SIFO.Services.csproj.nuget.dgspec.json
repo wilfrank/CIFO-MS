@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj": {}
+    "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj": {
+    "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj",
+        "projectUniqueName": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj",
         "projectName": "SIFO.Services",
-        "projectPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj",
+        "projectPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\SIFO-Notification-API\\SIFO.Services\\SIFO.Services.csproj",
         "packagesPath": "C:\\Users\\mayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS\\SIFO-Notification-API\\SIFO.Services\\obj\\",
+        "outputPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\SIFO-Notification-API\\SIFO.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

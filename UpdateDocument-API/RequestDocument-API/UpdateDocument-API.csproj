@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>UpdateDocument_API</RootNamespace>
+    <UserSecretsId>d6863624-31e3-451b-a156-ce22eae8d5b8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Docker.DotNet" Version="3.125.15" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CiFo-Sln\CiFo.Model\Cifo.Model.csproj" />
+    <ProjectReference Include="..\..\CiFo-Sln\Cifo.Service\Cifo.Service.csproj" />
+  </ItemGroup>
+
+</Project>

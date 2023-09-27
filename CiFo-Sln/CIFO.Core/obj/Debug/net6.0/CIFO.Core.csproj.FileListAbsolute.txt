@@ -1,0 +1,12 @@
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\bin\Debug\net6.0\Cifo.Core.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\bin\Debug\net6.0\Cifo.Core.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\bin\Debug\net6.0\Cifo.Core.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\refint\Cifo.Core.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\Cifo.Core.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\CIFO.Core\obj\Debug\net6.0\ref\Cifo.Core.dll

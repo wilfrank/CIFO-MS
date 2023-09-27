@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "9MzcWy/fj9XFXzxNGTSBiDhMJhhygtjQCycw4BfhcCU=",
-  "Source": "SIFO.Notification-API",
-  "BasePath": "_content/SIFO.Notification-API",
+  "Hash": "NvE+aA/Spw6CLQ62qiQDoRpeGqrRUBhTbGf8CWNvouk=",
+  "Source": "Notification-API",
+  "BasePath": "_content/Notification-API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

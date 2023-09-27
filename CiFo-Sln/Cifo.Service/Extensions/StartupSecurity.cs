@@ -10,6 +10,11 @@ using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 using static Google.Cloud.Firestore.V1.StructuredQuery.Types.FieldFilter.Types;
 using FirebaseAdmin;
+using Cifo.Service.Document;
+using Cifo.Service.Messages;
+using Cifo.Service.Storage;
+using CIFO.Core.Infraestructure;
+using Google.Api;
 
 namespace Cifo.Service.Extensions
 {
@@ -40,6 +45,11 @@ namespace Cifo.Service.Extensions
             services.AddScoped<IFirebaseAuthService, FirebaseAuthService>(auth => new FirebaseAuthService(firestore.ApiKey));
             services.AddSingleton<IGovFolderService, GovFolderService>(gov => new GovFolderService(govFolderUrl, _operator));
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IDocumentService, DocumentService>();
+            services.AddScoped<IUpdateDocumentService, UpdateDocumentService>();
+            services.AddScoped<INotificationService, NotificationService>();
+            services.AddScoped<IStorageService, StorageService>();
+            services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
         }
     }
 }

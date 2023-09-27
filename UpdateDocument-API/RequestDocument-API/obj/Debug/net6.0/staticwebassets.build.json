@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "gN0pCA0vMDiNJdrDnE+0dkbutd4a7dIIFBl4DlaB6aU=",
-  "Source": "CIFO.UpdateDocument-API",
-  "BasePath": "_content/CIFO.UpdateDocument-API",
+  "Hash": "xLtFEEdYFr68yIkG3Eb4zoZ1OtqN0m8EPcFa2Pq70z0=",
+  "Source": "UpdateDocument-API",
+  "BasePath": "_content/UpdateDocument-API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
