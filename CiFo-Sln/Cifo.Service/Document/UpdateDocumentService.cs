@@ -13,22 +13,13 @@ namespace Cifo.Service.Document
     public class UpdateDocumentService : IUpdateDocumentService
     {
         private readonly IStorageService _storageService;
-        private readonly IDocumentService _documentService;
-        private readonly IGovFolderService _authenticationServices;
         private readonly IUserService _userService;
-        private readonly IFirebaseAuthService _firebaseAuth;
 
         public UpdateDocumentService(IStorageService storageService,
-                                      IDocumentService documentService,
-                                      IGovFolderService authenticationServices,
-                                      IUserService userService,
-                                      IFirebaseAuthService firebaseAuthService)
+                                      IUserService userService)
         {
             _storageService = storageService;
-            _documentService = documentService;
-            _authenticationServices = authenticationServices;
             _userService = userService;
-            _firebaseAuth = firebaseAuthService;
         }
         public async Task<UserModel> UpdateDocument(FileDataDTO fileDTO, string userKey)
         {
@@ -43,7 +34,7 @@ namespace Cifo.Service.Document
                     stream.Position = 0;
 
                     var key = await _storageService.Upload(fileDTO.UserId.GetValueOrDefault(), stream, fileDTO.ContentType, fileDTO.Name);
-                    //var key = "https://firebasestorage.googleapis.com/v0/b/eafit-cifo.appspot.com/o/1256358953%2FDocumento.PDF_60dcdffe-2f0c-4eaa-a8dd-5b883ad20e19?alt=media&token=f2bfb809-84ab-4112-8bf3-e4ef572bc043";
+                    
                     if (!string.IsNullOrEmpty(key))
                     {
                         DocumentDto document = new DocumentDto
@@ -54,11 +45,14 @@ namespace Cifo.Service.Document
                             Url = key
                         };
 
-                         user = await _userService.GetById(userKey);
+                        user = await _userService.GetById(userKey);
 
-                        user.Documents.Add(document);
+                        if (user != null)
+                        {
+                            user.Documents.Add(document);
 
-                        await _userService.CreateAsync(user);
+                            await _userService.CreateAsync(user);
+                        }
                     }
                     else
                     {
@@ -70,6 +64,32 @@ namespace Cifo.Service.Document
                 {
                     throw new Exception("El archivo es obligatorio.");
                 }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+        public async Task<UserModel> DeleteDocument(string url, string userKey)
+        {
+            try
+            {
+                var user = await _userService.GetById(userKey);
+
+                if (user != null)
+                {
+                    var document=user.Documents.Where(x => x.Url.Equals(url)).FirstOrDefault();
+
+                    if (document != null) 
+                    {
+                        user.Documents.Remove(document);
+                        await _userService.CreateAsync(user);
+                    }
+                }
+
+                return user;
+
             }
             catch (Exception ex)
             {

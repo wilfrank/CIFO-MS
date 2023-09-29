@@ -7653,23 +7653,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\": {},
+    "C:\\Users\\mayra\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Authorization.API\\Authorization.API.csproj",
+      "projectUniqueName": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\Authorization.API\\Authorization.API.csproj",
       "projectName": "Authorization.API",
-      "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Authorization.API\\Authorization.API.csproj",
-      "packagesPath": "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Authorization.API\\obj\\",
+      "projectPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\Authorization.API\\Authorization.API.csproj",
+      "packagesPath": "C:\\Users\\mayra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\Authorization.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\wilfrank.montalvop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7685,8 +7685,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj": {
-              "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj"
+            "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj": {
+              "projectPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj"
             }
           }
         }
@@ -7729,7 +7729,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

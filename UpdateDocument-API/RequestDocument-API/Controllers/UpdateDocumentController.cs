@@ -43,5 +43,22 @@ namespace CIFO.RequestDocument_API.Controllers
                 return BadRequest(new ApiException(ex));
             }
         }
+        [HttpDelete]
+        [Route("DeleteDocument")]
+        [ProducesResponseType(typeof(ApiException), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(Task<UserModel>), StatusCodes.Status200OK)]
+        public async Task<ActionResult> DeleteDocument(DocumentDto document)
+        {
+            try
+            {
+                var userKey = User.Claims.First(c => c.Type == "user_id").Value;
+                return Ok(await _CertifyDocumentService.DeleteDocument(document.Url, userKey));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, string.Empty, null);
+                return BadRequest(new ApiException(ex));
+            }
+        }
     }
 }

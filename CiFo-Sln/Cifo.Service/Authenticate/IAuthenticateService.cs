@@ -1,4 +1,5 @@
-﻿using Cifo.Model.Document;
+﻿using Cifo.Model;
+using Cifo.Model.Document;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Cifo.Service.Authenticate
 {
     public interface IAuthenticateService
     {
-        Task<bool> AuthenticationDocument(AuthenticateDocumentModel document,string userKey);
+        Task<UserModel> AuthenticationDocument(AuthenticateDocumentModel document,string userKey);
     }
 }

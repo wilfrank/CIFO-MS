@@ -176,3 +176,4 @@ C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Auth.API\bin\Debug\net6.
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Auth.API\bin\Debug\net6.0\Cifo.Core.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Auth.API\bin\Debug\net6.0\Cifo.Core.pdb
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Auth.API\obj\Debug\net6.0\Auth.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Auth.API\obj\Debug\net6.0\Auth.API.MvcApplicationPartsAssemblyInfo.cs

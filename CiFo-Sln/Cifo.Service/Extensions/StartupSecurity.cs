@@ -15,6 +15,7 @@ using Cifo.Service.Messages;
 using Cifo.Service.Storage;
 using CIFO.Core.Infraestructure;
 using Google.Api;
+using Cifo.Service.Authenticate;
 
 namespace Cifo.Service.Extensions
 {
@@ -50,6 +51,7 @@ namespace Cifo.Service.Extensions
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IStorageService, StorageService>();
             services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
+            services.AddScoped<IAuthenticateService, AuthenticateService>();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Cifo.Service
                 var body = new StringContent(json, Encoding.UTF8, "application/json");
                 var jsonData = JsonConvert.SerializeObject(body);
                 var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
-                var request = await _httpClient.PostAsync(_govFolder.UrlAuthenticateDoc, data);
+                var request = await _httpClient.PutAsync(_govFolder.UrlAuthenticateDoc, data);
                 var result = await request.Content.ReadAsStringAsync();
 
                 if (result.Contains("Error al"))

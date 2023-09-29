@@ -76,13 +76,14 @@
 			]
 		},
 		{
-			"UpstreamPathTemplate": "/gw/cifo/AuthenticateDocumentGC",
-			"UpstreamHttpMethod": [ "PUT" ],
-			"DownstreamPathTemplate": "/apis/authenticateDocument",
+			"UpstreamPathTemplate": "/gw/cifo/DeleteDocument",
+			"UpstreamHttpMethod": [ "DELETE" ],
+			"DownstreamPathTemplate": "/api/UpdateDocument/DeleteDocument",
 			"DownstreamScheme": "https",
 			"DownstreamHostAndPorts": [
 				{
-					"Host": "govcarpeta-76300fb42a5a.herokuapp.com"
+					"Host": "localhost",
+					"Port": 7153
 				}
 			]
 		}

@@ -172,3 +172,4 @@ C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\SIFO-Notification-API\RequestDocu
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\Notification-API.pdb
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\Notification-API.genruntimeconfig.cache
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\ref\Notification-API.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\Notification-API.MvcApplicationPartsAssemblyInfo.cs

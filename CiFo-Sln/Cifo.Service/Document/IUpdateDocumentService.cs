@@ -11,5 +11,6 @@ namespace Cifo.Service.Document
     public interface IUpdateDocumentService
     {
         Task<UserModel> UpdateDocument(FileDataDTO fileDTO,string userKey);
+        Task<UserModel> DeleteDocument(string url, string userKey);
     }
 }

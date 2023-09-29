@@ -1,4 +1,5 @@
-﻿using Cifo.Model.Document;
+﻿using Cifo.Model;
+using Cifo.Model.Document;
 using Cifo.Model.Util;
 using Cifo.Service.Authenticate;
 using Cifo.Service.Interfaces;
@@ -26,13 +27,13 @@ namespace CIFO.RequestDocument_API.Controllers
         [HttpPut]
         [Route("AuthenticateDocument")]
         [ProducesResponseType(typeof(ApiException), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(Task<AuthenticateDocumentModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Task<UserModel>), StatusCodes.Status200OK)]
         public async Task<ActionResult> AuthenticateDocument(AuthenticateDocumentModel archivo)
         {
             try
             {
                 var userKey = User.Claims.First(c => c.Type == "user_id").Value;
-                return Ok(_authenticationServices.AuthenticationDocument(archivo,userKey));
+                return Ok(await _authenticationServices.AuthenticationDocument(archivo,userKey));
             }
             catch (Exception ex)
             {

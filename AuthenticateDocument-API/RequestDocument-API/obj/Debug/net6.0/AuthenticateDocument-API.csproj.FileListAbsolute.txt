@@ -174,3 +174,4 @@ C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\AuthenticateDocument-API\RequestD
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\AuthenticateDocument-API.pdb
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\AuthenticateDocument-API.genruntimeconfig.cache
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\ref\AuthenticateDocument-API.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\AuthenticateDocument-API.MvcApplicationPartsAssemblyInfo.cs

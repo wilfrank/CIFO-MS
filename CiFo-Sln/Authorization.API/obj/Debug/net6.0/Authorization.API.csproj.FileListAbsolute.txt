@@ -172,3 +172,4 @@ C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Authorization.API\bin\De
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Authorization.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Authorization.API\bin\Debug\net6.0\Cifo.Core.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Authorization.API\bin\Debug\net6.0\Cifo.Core.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Authorization.API\obj\Debug\net6.0\Authorization.API.MvcApplicationPartsAssemblyInfo.cs
