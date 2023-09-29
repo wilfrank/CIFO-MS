@@ -15,6 +15,7 @@ TestResult.xml
 Version.cs
 Version.h
 Version.cpp
+*/obj/*
 RequestDocument-API/.vs/SIFO/*
 RequestDocument-API/SIFO.Models/obj/*
 RequestDocument-API/RequestDocument-API/obj/*
