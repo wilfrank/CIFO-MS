@@ -899,23 +899,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mayra\\.nuget\\packages\\": {},
+    "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj",
+      "projectUniqueName": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj",
       "projectName": "Cifo.Model",
-      "projectPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj",
-      "packagesPath": "C:\\Users\\mayra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mayra\\Desktop\\Eafit\\Sistemas distribuidos\\Entrega 3\\MS-GIT\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\obj\\",
+      "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj",
+      "packagesPath": "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\",
+      "outputPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wilfrank.montalvop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -964,7 +964,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authorization.API", "Author
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdateDocument-API", "..\UpdateDocument-API\RequestDocument-API\UpdateDocument-API.csproj", "{A3191890-12F2-4FD0-8C1F-3535F695C82F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cifo.Core", "CIFO.Core\Cifo.Core.csproj", "{7077F9E7-9786-4161-A90C-C6A0F503A5F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cifo.Core", "CIFO.Core\Cifo.Core.csproj", "{7077F9E7-9786-4161-A90C-C6A0F503A5F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification-API", "..\SIFO-Notification-API\RequestDocument-API\Notification-API.csproj", "{A51D08A9-1E23-4D95-A82A-CB18A31D5B1F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateDocument-API", "..\AuthenticateDocument-API\RequestDocument-API\AuthenticateDocument-API.csproj", "{AC5CE0D4-6CDA-47BD-8535-E1D7C24DC793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingWorker.API", "MessagingWorker.API\MessagingWorker.API.csproj", "{4E28D15F-D287-4748-99F2-9DCB08AE7BC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{AC5CE0D4-6CDA-47BD-8535-E1D7C24DC793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC5CE0D4-6CDA-47BD-8535-E1D7C24DC793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC5CE0D4-6CDA-47BD-8535-E1D7C24DC793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E28D15F-D287-4748-99F2-9DCB08AE7BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E28D15F-D287-4748-99F2-9DCB08AE7BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E28D15F-D287-4748-99F2-9DCB08AE7BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E28D15F-D287-4748-99F2-9DCB08AE7BC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{7077F9E7-9786-4161-A90C-C6A0F503A5F2} = {F94F46A0-735B-4538-820C-47B65279260E}
 		{A51D08A9-1E23-4D95-A82A-CB18A31D5B1F} = {A4011A75-BBF6-4E99-81C9-20BBA7A36DE4}
 		{AC5CE0D4-6CDA-47BD-8535-E1D7C24DC793} = {A4011A75-BBF6-4E99-81C9-20BBA7A36DE4}
+		{4E28D15F-D287-4748-99F2-9DCB08AE7BC3} = {A4011A75-BBF6-4E99-81C9-20BBA7A36DE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EC20429-3733-4F03-BF9F-A85860F17DF8}
