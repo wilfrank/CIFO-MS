@@ -87,5 +87,4 @@ C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\Auth
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\AuthenticateDocument-API.pdb
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\AuthenticateDocument-API.genruntimeconfig.cache
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\ref\AuthenticateDocument-API.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\obj\Debug\net6.0\AuthenticateDocument-API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\AuthenticateDocument-API\RequestDocument-API\bin\Debug\net6.0\eafit-cifo-firebase.json

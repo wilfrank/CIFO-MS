@@ -16,7 +16,7 @@ namespace Cifo.Service
         {
             //throw new NotImplementedException();
             var docRef = db.Collection(user.GetType().Name).Document(user.Id.ToString());
-            await docRef.CreateAsync(user).ConfigureAwait(false);
+            await docRef.SetAsync(user).ConfigureAwait(false);
             return user;
         }
 

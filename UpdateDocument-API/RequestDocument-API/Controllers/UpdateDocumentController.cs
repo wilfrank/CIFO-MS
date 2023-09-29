@@ -1,6 +1,7 @@
 ﻿//using CIFO.Models.Models;
 //using CIFO.Models.Util;
 //using CIFO.Services.CertifyDocument;
+using Cifo.Model;
 using Cifo.Model.Document;
 using Cifo.Model.Util;
 using Cifo.Service.Document;
@@ -28,12 +29,13 @@ namespace CIFO.RequestDocument_API.Controllers
         [HttpPost]
         [Route("UpdateDocument")]
         [ProducesResponseType(typeof(ApiException), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(Task<FileDataDTO>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Task<UserModel>), StatusCodes.Status200OK)]
         public async Task<ActionResult> UpdateDocument(FileDataDTO archivo)
         {
             try
             {
-                return Ok( await _CertifyDocumentService.UpdateDocument(archivo));
+                var userKey= User.Claims.First(c => c.Type == "user_id").Value;
+                return Ok( await _CertifyDocumentService.UpdateDocument(archivo,userKey));
             }
             catch (Exception ex)
             {

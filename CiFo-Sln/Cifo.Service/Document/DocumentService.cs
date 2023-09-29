@@ -1,4 +1,5 @@
-﻿using Cifo.Model.Document;
+﻿using Cifo.Model;
+using Cifo.Model.Document;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Cifo.Service.Document
         {
             
         }
-        public async Task<string> SaveDocument(DocumentModel document)
+        public async Task<string> SaveDocument(DocumentDto document)
         {
             //return await _documentRepository.SaveDocument(document);
             return "";

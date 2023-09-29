@@ -1,4 +1,5 @@
-﻿using Cifo.Model.Document;
+﻿using Cifo.Model;
+using Cifo.Model.Document;
 using Cifo.Service.Interfaces;
 using Cifo.Service.Storage;
 using System;
@@ -14,21 +15,28 @@ namespace Cifo.Service.Document
         private readonly IStorageService _storageService;
         private readonly IDocumentService _documentService;
         private readonly IGovFolderService _authenticationServices;
+        private readonly IUserService _userService;
+        private readonly IFirebaseAuthService _firebaseAuth;
 
         public UpdateDocumentService(IStorageService storageService,
                                       IDocumentService documentService,
-                                      IGovFolderService authenticationServices)
+                                      IGovFolderService authenticationServices,
+                                      IUserService userService,
+                                      IFirebaseAuthService firebaseAuthService)
         {
             _storageService = storageService;
             _documentService = documentService;
             _authenticationServices = authenticationServices;
+            _userService = userService;
+            _firebaseAuth = firebaseAuthService;
         }
-        public async Task<FileDataDTO> UpdateDocument(FileDataDTO fileDTO)
+        public async Task<UserModel> UpdateDocument(FileDataDTO fileDTO, string userKey)
         {
             try
             {
                 if (!string.IsNullOrEmpty(fileDTO.ImageString))
                 {
+                    UserModel user = new UserModel();
                     byte[] data = Convert.FromBase64String(fileDTO.ImageString);
                     MemoryStream stream = new MemoryStream();
                     stream.Write(data, 0, data.Length);
@@ -38,44 +46,25 @@ namespace Cifo.Service.Document
                     //var key = "https://firebasestorage.googleapis.com/v0/b/eafit-cifo.appspot.com/o/1256358953%2FDocumento.PDF_60dcdffe-2f0c-4eaa-a8dd-5b883ad20e19?alt=media&token=f2bfb809-84ab-4112-8bf3-e4ef572bc043";
                     if (!string.IsNullOrEmpty(key))
                     {
-                        DocumentModel document = new DocumentModel
+                        DocumentDto document = new DocumentDto
                         {
-                            IdUser = fileDTO.UserId,
-                            DocumentName = fileDTO.Name,
-                            Status = "Cargado",
-                            URL = key
+                            Name = fileDTO.Name,
+                            IsVerified = false,
+                            Label = fileDTO.Name,
+                            Url = key
                         };
 
-                        var path = await _documentService.SaveDocument(document);
+                         user = await _userService.GetById(userKey);
 
-                        document.PathBD = path;
+                        user.Documents.Add(document);
 
-                        AuthenticateDocumentModel model = new AuthenticateDocumentModel
-                        {
-                            idCitizen = fileDTO.UserId,
-                            UrlDocument = key,
-                            documentTitle = fileDTO.Name.Replace(".", "")
-                        };
-
-                        AuthenticateDocumentCompleteModel modelAut = new AuthenticateDocumentCompleteModel
-                        {
-                            AuthenticateModel = model,
-                            DocumentModel = document
-                        };
-                        try
-                        {
-                            await _authenticationServices.AuthenticationDocument(modelAut);
-                        }
-                        catch (Exception ex)
-                        {
-                            throw new Exception("Error al autenticar, documento cargado sin autenticar"); 
-                        }
+                        await _userService.CreateAsync(user);
                     }
                     else
                     {
                         throw new Exception("Error retornando la ruta del archivo");
                     }
-                    return fileDTO;
+                    return user;
                 }
                 else
                 {

@@ -11,8 +11,6 @@ namespace Cifo.Model.Document
         public string? ImageString { get; set; }
         public string? ContentType { get; set; }
         public string? Name { get; set; }
-        public string? DocumentRouting { get; set; }
         public int? UserId { get; set; }
-        public string? UserEmail { get; set; }
     }
 }

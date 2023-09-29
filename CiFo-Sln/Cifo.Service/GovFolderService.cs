@@ -22,11 +22,11 @@ namespace Cifo.Service
             _operator = @operator;
         }
 
-        public async Task<bool> AuthenticationDocument(AuthenticateDocumentCompleteModel document)
+        public async Task<bool> AuthenticationDocument(AuthenticateDocumentModel document)
         {
             try
             {
-                var json = JsonConvert.SerializeObject(document.AuthenticateModel);
+                var json = JsonConvert.SerializeObject(document);
                 var body = new StringContent(json, Encoding.UTF8, "application/json");
                 var jsonData = JsonConvert.SerializeObject(body);
                 var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
@@ -37,10 +37,6 @@ namespace Cifo.Service
                 {
                     throw new Exception($"Error autenticar documento - {result}");
                 }
-
-                document.DocumentModel.Status = "Autenticado";
-
-               // await _documentRepository.UpdateDocument(document.DocumentModel);
 
                 return true;
             }

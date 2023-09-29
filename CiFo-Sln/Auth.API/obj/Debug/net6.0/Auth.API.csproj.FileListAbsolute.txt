@@ -171,4 +171,3 @@ C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Auth.API\obj\Debug\net6.0\Auth.API.pdb
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Auth.API\obj\Debug\net6.0\Auth.API.genruntimeconfig.cache
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Auth.API\obj\Debug\net6.0\ref\Auth.API.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Auth.API\obj\Debug\net6.0\Auth.API.MvcApplicationPartsAssemblyInfo.cs

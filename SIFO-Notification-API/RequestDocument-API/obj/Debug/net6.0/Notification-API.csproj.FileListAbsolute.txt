@@ -86,5 +86,4 @@ C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\Notification-API.pdb
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\Notification-API.genruntimeconfig.cache
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\ref\Notification-API.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO-Notification-API\RequestDocument-API\obj\Debug\net6.0\Notification-API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\SIFO-Notification-API\RequestDocument-API\bin\Debug\net6.0\eafit-cifo-firebase.json

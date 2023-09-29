@@ -1,4 +1,5 @@
-﻿using Cifo.Model.Document;
+﻿using Cifo.Model;
+using Cifo.Model.Document;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Cifo.Service.Document
 {
     public interface IDocumentService
     {
-        Task<string> SaveDocument(DocumentModel document);
+        Task<string> SaveDocument(DocumentDto document);
     }
 }

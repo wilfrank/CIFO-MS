@@ -88,4 +88,3 @@ C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\Upda
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\UpdateDocument-API\RequestDocument-API\obj\Debug\net6.0\UpdateDocument-API.pdb
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\UpdateDocument-API\RequestDocument-API\obj\Debug\net6.0\UpdateDocument-API.genruntimeconfig.cache
 C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\UpdateDocument-API\RequestDocument-API\obj\Debug\net6.0\ref\UpdateDocument-API.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\UpdateDocument-API\RequestDocument-API\obj\Debug\net6.0\UpdateDocument-API.MvcApplicationPartsAssemblyInfo.cs
