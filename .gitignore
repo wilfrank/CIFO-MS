@@ -69,3 +69,10 @@ Version.cpp
 /UpdateDocument-API/RequestDocument-API/obj
 /CiFo-Sln/MessagingWorker.API/bin/Debug/net6.0
 /CiFo-Sln/CIFO.Core/obj/Debug/net6.0
+CiFo-Sln/Auth.API/bin/
+CiFo-Sln/Auth.API/obj/
+CiFo-Sln/Authorization.API/obj/
+CiFo-Sln/CIFO.Core/obj/
+CiFo-Sln/CiFo.Model/obj/
+CiFo-Sln/Cifo.Service/obj/
+CiFo-Sln/Gateway.API/obj/
