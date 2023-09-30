@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CIFO.UpdateDocument-API.props" />
-</Project>

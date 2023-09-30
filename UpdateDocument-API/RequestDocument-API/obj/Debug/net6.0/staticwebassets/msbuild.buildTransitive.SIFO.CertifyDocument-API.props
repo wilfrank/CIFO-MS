@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\SIFO.CertifyDocument-API.props" />
-</Project>
