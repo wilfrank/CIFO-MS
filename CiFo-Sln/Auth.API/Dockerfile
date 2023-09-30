@@ -21,5 +21,17 @@ RUN dotnet publish "Auth.API.csproj" -c Release -o /app/publish /p:UseAppHost=fa
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "Auth.API.dll"]
+
+#FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+#WORKDIR /src
+#COPY Auth.API/Auth.API.csproj .
+#RUN dotnet restore
+#COPY . .
+#RUN dotnet publish -c release -o /app
+#
+#FROM mcr.microsoft.com/dotnet/aspnet:6.0
+#WORKDIR /app
+#COPY --from=build /app .
+#ENTRYPOINT ["dotnet", "Auth.API.dll"]
