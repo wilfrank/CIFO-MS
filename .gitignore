@@ -76,3 +76,6 @@ CiFo-Sln/CIFO.Core/obj/
 CiFo-Sln/CiFo.Model/obj/
 CiFo-Sln/Cifo.Service/obj/
 CiFo-Sln/Gateway.API/obj/
+CiFo-Sln/SubscriberWorker/bin/
+CiFo-Sln/SubscriberWorker/obj/
+CiFo-Sln/.vs/CiFo-Sln/DesignTimeBuild/.dtbcache.v2

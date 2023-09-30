@@ -45,8 +45,8 @@ namespace MessagingWorker.API.Controllers
             var jsonMsg = JsonConvert.SerializeObject(_values);
             var body = Encoding.UTF8.GetBytes(jsonMsg);
             channel.BasicPublish(exchange: "", routingKey: _queueName, body: body);
-            var consumer = new MessageReceiver(channel, _logger);
-            channel.BasicConsume(_queueName, false, consumer);
+            //var consumer = new MessageReceiver(channel, _logger);
+            //channel.BasicConsume(_queueName, false, consumer);
             return Ok(_values.ToList());
         }
     }
