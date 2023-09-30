@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CiFo-Sln\CiFo.Model\Cifo.Model.csproj" />
-    <ProjectReference Include="..\..\CiFo-Sln\Cifo.Service\Cifo.Service.csproj" />
+    <ProjectReference Include="..\CiFo.Model\Cifo.Model.csproj" />
+    <ProjectReference Include="..\Cifo.Service\Cifo.Service.csproj" />
   </ItemGroup>
 
 </Project>
