@@ -23,7 +23,7 @@ namespace MessagingWorker.API.Controllers
 
         [HttpPost()]
         [Route("transfer")]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<IActionResult> Transfer(OperatorDto @operator)
         {
             var connection = _factory.CreateConnection();

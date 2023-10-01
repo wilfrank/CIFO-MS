@@ -37,6 +37,9 @@ namespace SubscriberWorker
             var bodyToSend = new StringContent(json, Encoding.UTF8, "application/json");
             var jsonData = JsonConvert.SerializeObject(bodyToSend);
             var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            
+            // Get BaseUrl of Operator who goes to transfer
+            
             _httpClient.PostAsync("TransferCitizen", data);
             _channel.BasicAck(deliveryTag, false);
         }
