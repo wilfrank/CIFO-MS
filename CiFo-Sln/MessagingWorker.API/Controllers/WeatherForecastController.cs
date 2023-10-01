@@ -1,4 +1,3 @@
-using MessagingWorker.API.Messaging;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
