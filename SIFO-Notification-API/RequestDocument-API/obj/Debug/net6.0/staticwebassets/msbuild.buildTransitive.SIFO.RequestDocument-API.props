@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\SIFO.RequestDocument-API.props" />
-</Project>

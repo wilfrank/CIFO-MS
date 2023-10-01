@@ -1,22 +1,3 @@
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.AssemblyReference.cache
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.AssemblyInfoInputs.cache
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.AssemblyInfo.cs
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.CoreCompileInputs.cache
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cosmos.CRTCompat.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.deps.json
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.pdb
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Core.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Model.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Core.pdb
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Model.pdb
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.CopyComplete
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\refint\Cifo.Service.dll
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.pdb
-C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\ref\Cifo.Service.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cosmos.CRTCompat.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.deps.json
@@ -36,3 +17,22 @@ C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\n
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\refint\Cifo.Service.dll
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.pdb
 C:\Personal\Eafit\ING_SIS_DIST\Project\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\ref\Cifo.Service.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.deps.json
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Service.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Core.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Model.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Core.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\bin\Debug\net6.0\Cifo.Model.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.AssemblyReference.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.AssemblyInfoInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.AssemblyInfo.cs
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.CoreCompileInputs.cache
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.csproj.CopyComplete
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\refint\Cifo.Service.dll
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\Cifo.Service.pdb
+C:\Users\mayra\Desktop\Eafit\Sistemas distribuidos\Entrega 3\MS-GIT\CIFO-MS\CiFo-Sln\Cifo.Service\obj\Debug\net6.0\ref\Cifo.Service.dll
