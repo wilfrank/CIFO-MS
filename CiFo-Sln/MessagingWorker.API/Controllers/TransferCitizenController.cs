@@ -37,45 +37,58 @@ namespace MessagingWorker.API.Controllers
         [Route("transfer")]
         public async Task<IActionResult> Transfer(OperatorCompleteDto @operator)
         {
-            var validate = await _govFolderService.UnregisterCitizen(@operator.Operator);
-
-            if (validate) 
+            try
             {
-                var userKey = User.Claims.First(c => c.Type == "user_id").Value;
-                var user = await _userService.GetById(userKey);
+                var validate = await _govFolderService.UnregisterCitizen(@operator.Operator);
 
-                if (user != null)
+                if (validate)
                 {
-                    var documents= (from d in user.Documents
-                                    select d.Url).ToList();
+                    var userKey = User.Claims.First(c => c.Type == "user_id").Value;
+                    var user = await _userService.GetById(userKey);
 
-                    TransferDocDto  transferDocDto = new TransferDocDto
+                    if (user != null)
                     {
-                        Id= int.Parse(user.IdentityNumber),
-                        CitizenName=user.UserName,
-                        CitizenEmail=user.Email,
-                        UrlDocuments=documents
-                    };
+                        user.IsActived = false;
+                        await _userService.CreateAsync(user);
 
-                    CitizenTransDto citizenDto = new CitizenTransDto
-                    {
-                        TransferDocDto = transferDocDto,
-                        UrlOperatorToChange = @operator.UrlOperatorToChange
+                        var documents = user.Documents
+                            .Select(x => new KeyValuePair<string, string>(x.Name, x.Url))
+                            .ToDictionary(x => x.Key, x => x.Value);
 
-                    };
+                        TransferDocDto transferDocDto = new TransferDocDto
+                        {
+                            Id = int.Parse(user.IdentityNumber),
+                            CitizenName = user.UserName,
+                            CitizenEmail = user.Email,
+                            UrlDocuments = documents
+                        };
 
-                    var connection = _factory.CreateConnection();
-                    using var channel = connection.CreateModel();
-                    channel.QueueDeclare(_queueName, exclusive: false);
-                    var jsonMsg = JsonConvert.SerializeObject(citizenDto);
-                    var body = Encoding.UTF8.GetBytes(jsonMsg);
-                    channel.BasicPublish(exchange: "", routingKey: _queueName, body: body);
+                        CitizenTransDto citizenDto = new CitizenTransDto
+                        {
+                            TransferDocDto = transferDocDto,
+                            UrlOperatorToChange = @operator.UrlOperatorToChange
+
+                        };
+
+                        var connection = _factory.CreateConnection();
+                        using var channel = connection.CreateModel();
+                        channel.QueueDeclare(_queueName, exclusive: false);
+                        var jsonMsg = JsonConvert.SerializeObject(citizenDto);
+                        var body = Encoding.UTF8.GetBytes(jsonMsg);
+                        channel.BasicPublish(exchange: "", routingKey: _queueName, body: body);
+                    }
+
+
                 }
 
-               
+                return Ok();
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
            
-            return Ok();
         }
 
     }

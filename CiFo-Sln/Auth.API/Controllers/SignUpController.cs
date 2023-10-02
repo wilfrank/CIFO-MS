@@ -1,6 +1,7 @@
 ﻿using Cifo.Model;
 using Cifo.Model.GovFolder;
 using Cifo.Service.Interfaces;
+using Firebase.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,29 +30,42 @@ namespace Auth.API.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> SignUp(UserModel user)
         {
-            _logger.LogInformation($"Siging up user {user.Email}..");
-            var validate = await _govFolderService.ValidateCitizen(user.IdentityNumber);
-            if (!string.IsNullOrEmpty(validate))
+            try
             {
-                _logger.LogInformation($"Siging up user Error {validate}..");
-                return BadRequest(validate);
+                _logger.LogInformation($"Siging up user {user.Email}..");
+                var validate = await _govFolderService.ValidateCitizen(user.IdentityNumber);
+                if (!string.IsNullOrEmpty(validate))
+                {
+                    _logger.LogInformation($"Siging up user Error {validate}..");
+                    return BadRequest(validate);
+                }
+                var citizen = new CitizenDto
+                {
+                    address = user.Address,
+                    email = user.Email,
+                    name = $"{user.FirstName} {user.LastName}",
+                    id = int.Parse(user.IdentityNumber)
+                };
+                await _govFolderService.RegisterCitizen(citizen);
+
+                var userData = await _firebaseAuth.SignUp(user);
+
+                if (userData != null)
+                {
+                    if (user.Documents == null)
+                        user.Documents = new List<DocumentDto>();
+
+                    user.Id = userData.LocalId;
+                    await _userService.CreateAsync(user);
+                }
+                return Ok(userData);
             }
-            var citizen = new CitizenDto
+            catch (Exception ex)
             {
-                address = user.Address,
-                email = user.Email,
-                name = $"{user.FirstName} {user.LastName}",
-                id = int.Parse(user.IdentityNumber)
-            };
-            await _govFolderService.RegisterCitizen(citizen);
-            var userData = await _firebaseAuth.SignUp(user);
-            if (userData != null)
-            {
-                user.Documents = new List<DocumentDto>();
-                user.Id = userData.LocalId;
-                await _userService.CreateAsync(user);
+
+                throw;
             }
-            return Ok(userData);
+
         }
 
         [HttpPost()]
@@ -59,27 +73,38 @@ namespace Auth.API.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> RecieverCitizen(TransferDocDto transferUser)
         {
-            _logger.LogInformation($"Recieving new user to be saved {transferUser.CitizenName}");
-
-            var documents = (from d in transferUser.UrlDocuments
-                             select new DocumentDto
-                             {
-                                 Url = d
-                             }).ToList();
-
-            UserModel user = new UserModel
+            try
             {
-                FirstName = transferUser.CitizenName,
-                IdentityNumber = transferUser.Id.ToString(),
-                IsActived = true,
-                Documents = documents,
-                Email=transferUser.CitizenEmail,
-                Address="Av 76 # 86-96"
-            };
+                _logger.LogInformation($"Recieving new user to be saved {transferUser.CitizenName}");
 
-            await SignUp(user);
+                var documents = (from d in transferUser.UrlDocuments
+                                 select new DocumentDto
+                                 {
+                                     Url = d.Value,
+                                     Name = d.Key
+                                 }).ToList();
 
-            return Ok(transferUser);
+                UserModel user = new UserModel
+                {
+                    FirstName = transferUser.CitizenName,
+                    IdentityNumber = transferUser.Id.ToString(),
+                    IsActived = true,
+                    Documents = documents,
+                    Email = transferUser.CitizenEmail,
+                    Address = "Av 58 # 89-96",
+                    Password = transferUser.Id.ToString() + "C1f0Services"
+                };
+
+                await SignUp(user);
+
+                return Ok(transferUser);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
         }
     }
 }

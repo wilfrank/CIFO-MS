@@ -25,21 +25,31 @@ namespace SubscriberWorker
             Console.WriteLine(string.Concat("Routing tag: ", routingKey));
             Console.WriteLine(string.Concat("Message: ", Encoding.UTF8.GetString(body.ToArray())));
 
-            if (routingKey == "transfer-user")
+            try
             {
-                var message = Encoding.UTF8.GetString(body.ToArray());
-                var dataM = JsonConvert.DeserializeObject<CitizenTransDto>(message);
-                
-                var jsonData = JsonConvert.SerializeObject(dataM.TransferDocDto);
-                var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                if (routingKey == "transfer-user")
+                {
+                    var message = Encoding.UTF8.GetString(body.ToArray());
+                    var dataM = JsonConvert.DeserializeObject<CitizenTransDto>(message);
 
-                HttpClient client = new HttpClient {
-                    BaseAddress = new Uri(dataM.UrlOperatorToChange)
-                };
+                    var jsonData = JsonConvert.SerializeObject(dataM.TransferDocDto);
+                    var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-                client.PostAsync("transferCitizen", data);
+                    HttpClient client = new HttpClient
+                    {
+                        BaseAddress = new Uri(dataM.UrlOperatorToChange)
+                    };
+
+                    client.PostAsync("transferCitizen", data);
+                }
+                _channel.BasicAck(deliveryTag, false);
             }
-            _channel.BasicAck(deliveryTag, false);
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
