@@ -33,9 +33,10 @@ namespace SubscriberWorker
                 var jsonData = JsonConvert.SerializeObject(dataM.TransferDocDto);
                 var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-                HttpClient client = new HttpClient();
+                HttpClient client = new HttpClient {
+                    BaseAddress = new Uri(dataM.UrlOperatorToChange)
+                };
 
-                client.BaseAddress = new Uri(dataM.UrlOperatorToChange);
                 client.PostAsync("transferCitizen", data);
             }
             _channel.BasicAck(deliveryTag, false);
