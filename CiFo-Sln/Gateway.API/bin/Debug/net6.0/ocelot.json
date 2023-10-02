@@ -86,6 +86,31 @@
 					"Port": 7153
 				}
 			]
+		},
+		{
+			"UpstreamPathTemplate": "/gw/cifo/transfer",
+			"UpstreamHttpMethod": [ "POST" ],
+			"DownstreamPathTemplate": "/api/TransferCitizen/Transfer",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 5226
+				}
+			]
+		},
+
+		{
+			"UpstreamPathTemplate": "/api/transferCitizen",
+			"UpstreamHttpMethod": [ "POST" ],
+			"DownstreamPathTemplate": "/api/SignUp/TransferCitizen",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 5256
+				}
+			]
 		}
 	]
 

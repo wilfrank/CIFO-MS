@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CiFo.Model\Cifo.Model.csproj" />
+    <ProjectReference Include="..\Cifo.Service\Cifo.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@ using Cifo.Model.GovFolder;
 using Cifo.Service.Interfaces;
 using Newtonsoft.Json;
 using System.Dynamic;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using static Google.Rpc.Context.AttributeContext.Types;
@@ -63,9 +64,32 @@ namespace Cifo.Service
             return citizen;
         }
 
-        public Task<CitizenDto> UnregisterCitizen(CitizenDto citizenDto)
+        public async Task<bool> UnregisterCitizen(OperatorDto operatorDto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var jsonData = JsonConvert.SerializeObject(operatorDto);
+                var data = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+                var request = new HttpRequestMessage(HttpMethod.Delete,
+                                              _govFolder.UrlUnregister);
+                request.Content = data;
+                var response = _httpClient.Send(request);
+
+                var result = await response.Content.ReadAsStringAsync();
+                if (result.Contains("Error al"))
+                {
+                    throw new Exception($"Error unregister citizen at GovCarpeta Endpoint - {result}");
+                }
+
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         public async Task<string?> ValidateCitizen(string citizenId)
@@ -74,6 +98,6 @@ namespace Cifo.Service
             var response = await request.Content.ReadAsStringAsync();
             return response;
         }
-      
+
     }
 }

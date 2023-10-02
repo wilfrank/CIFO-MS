@@ -53,5 +53,33 @@ namespace Auth.API.Controllers
             }
             return Ok(userData);
         }
+
+        [HttpPost()]
+        [Route("transferCitizen")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RecieverCitizen(TransferDocDto transferUser)
+        {
+            _logger.LogInformation($"Recieving new user to be saved {transferUser.CitizenName}");
+
+            var documents = (from d in transferUser.UrlDocuments
+                             select new DocumentDto
+                             {
+                                 Url = d
+                             }).ToList();
+
+            UserModel user = new UserModel
+            {
+                FirstName = transferUser.CitizenName,
+                IdentityNumber = transferUser.Id.ToString(),
+                IsActived = true,
+                Documents = documents,
+                Email=transferUser.CitizenEmail,
+                Address="Av 76 # 86-96"
+            };
+
+            await SignUp(user);
+
+            return Ok(transferUser);
+        }
     }
 }

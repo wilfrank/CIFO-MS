@@ -4,6 +4,9 @@ using RabbitMQ.Client;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
+using Cifo.Service.Interfaces;
+using Cifo.Model.GovFolder;
+using System.Net.Http;
 
 namespace MessagingWorker.API.Controllers
 {
@@ -15,32 +18,64 @@ namespace MessagingWorker.API.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private IConnectionFactory _factory;
         private string _queueName = "transfer-user";
-        public TransferCitizenController(ILogger<WeatherForecastController> logger, IConnectionFactory factory)
+        private readonly IGovFolderService _govFolderService;
+        private readonly IUserService _userService;
+
+        public TransferCitizenController(ILogger<WeatherForecastController> logger,
+                                        IConnectionFactory factory,
+                                        IGovFolderService govFolderService,
+                                        IUserService userService)
         {
             _logger = logger;
             _factory = factory;
+            _govFolderService = govFolderService;
+            _userService = userService;
+
         }
 
         [HttpPost()]
         [Route("transfer")]
-        //[AllowAnonymous]
-        public async Task<IActionResult> Transfer(OperatorDto @operator)
+        public async Task<IActionResult> Transfer(OperatorCompleteDto @operator)
         {
-            var connection = _factory.CreateConnection();
-            using var channel = connection.CreateModel();
-            channel.QueueDeclare(_queueName, exclusive: false);
-            var jsonMsg = JsonConvert.SerializeObject(@operator);
-            var body = Encoding.UTF8.GetBytes(jsonMsg);
-            channel.BasicPublish(exchange: "", routingKey: _queueName, body: body);
-            return Ok();
-        }
+            var validate = await _govFolderService.UnregisterCitizen(@operator.Operator);
 
-        [HttpPost()]
-        [AllowAnonymous]
-        public async Task<IActionResult> RecieverCitizen(TransferDocDto transferUser)
-        {
-            _logger.LogInformation($"Recieving new user to be saved {transferUser.CitizenName}");
-            return Ok(transferUser);
+            if (validate) 
+            {
+                var userKey = User.Claims.First(c => c.Type == "user_id").Value;
+                var user = await _userService.GetById(userKey);
+
+                if (user != null)
+                {
+                    var documents= (from d in user.Documents
+                                    select d.Url).ToList();
+
+                    TransferDocDto  transferDocDto = new TransferDocDto
+                    {
+                        Id= int.Parse(user.IdentityNumber),
+                        CitizenName=user.UserName,
+                        CitizenEmail=user.Email,
+                        UrlDocuments=documents
+                    };
+
+                    CitizenTransDto citizenDto = new CitizenTransDto
+                    {
+                        TransferDocDto = transferDocDto,
+                        UrlOperatorToChange = @operator.UrlOperatorToChange
+
+                    };
+
+                    var connection = _factory.CreateConnection();
+                    using var channel = connection.CreateModel();
+                    channel.QueueDeclare(_queueName, exclusive: false);
+                    var jsonMsg = JsonConvert.SerializeObject(citizenDto);
+                    var body = Encoding.UTF8.GetBytes(jsonMsg);
+                    channel.BasicPublish(exchange: "", routingKey: _queueName, body: body);
+                }
+
+               
+            }
+           
+            return Ok();
         }
 
     }

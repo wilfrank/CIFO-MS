@@ -52,6 +52,7 @@ namespace Cifo.Service.Extensions
             services.AddScoped<IStorageService, StorageService>();
             services.AddScoped<ICloudStorageProvider, FireBStorageProvider>();
             services.AddScoped<IAuthenticateService, AuthenticateService>();
+            
         }
     }
 }
