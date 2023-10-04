@@ -1,6 +1,6 @@
 {
 	"GlobalConfiguration": {
-		"BaseUrl": "http://localhost:5176" //localhost:44384/api/SignUp/
+		"BaseUrl": "http://localhost:5176"
 	},
 	"Routes": [
 		{
