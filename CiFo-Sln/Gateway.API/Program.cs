@@ -27,6 +27,9 @@ app.UseCors(x => x
 .AllowAnyMethod()
 .AllowAnyHeader());
 
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

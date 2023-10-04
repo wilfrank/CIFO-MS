@@ -52,7 +52,7 @@ namespace MessagingWorker.API.Controllers
                         await _userService.CreateAsync(user);
 
                         var documents = user.Documents
-                            .Select(x => new KeyValuePair<string, string>(x.Name, x.Url))
+                            .Select(x => new KeyValuePair<string, string[]>(x.Name,new[] { x.Url } ))
                             .ToDictionary(x => x.Key, x => x.Value);
 
                         TransferDocDto transferDocDto = new TransferDocDto

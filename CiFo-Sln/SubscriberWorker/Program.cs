@@ -12,9 +12,9 @@ namespace SubscriberWorker
             //Console.WriteLine("Hello, World!");
             _factory = new ConnectionFactory()
             {
-                HostName = "localhost",
-                Port = 5673
+                Uri = new Uri("amqps://omgrtclt:PCXsM2MLlHrn5C4TZZrVOlW7ZxbLMBel@turkey.rmq.cloudamqp.com/omgrtclt")
             };
+
             _httpClient = new HttpClient()
             {
                 BaseAddress = new Uri("http://localhost:5226/api/")

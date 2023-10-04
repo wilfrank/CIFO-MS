@@ -80,7 +80,7 @@ namespace Auth.API.Controllers
                 var documents = (from d in transferUser.UrlDocuments
                                  select new DocumentDto
                                  {
-                                     Url = d.Value,
+                                     Url = d.Value[0],
                                      Name = d.Key
                                  }).ToList();
 

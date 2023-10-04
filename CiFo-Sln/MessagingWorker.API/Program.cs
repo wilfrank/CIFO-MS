@@ -21,9 +21,8 @@ builder.Services.ConfigurationCifoApp(fireBaseApp, firestore, govFolderUrl, _ope
 builder.Services.ConfigurationAuth(firestore);
 builder.Services.AddSingleton<IConnectionFactory>(cf => new ConnectionFactory()
 {
-    HostName = "localhost",
-    Port = 5673
-});
+    Uri = new Uri(builder.Configuration.GetValue<string>("rabbitmq.uri"))
+}) ;
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
