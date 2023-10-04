@@ -1,7 +1,6 @@
 ﻿using Cifo.Model;
 using Cifo.Model.GovFolder;
 using Cifo.Service.Interfaces;
-using Firebase.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,7 +43,7 @@ namespace Auth.API.Controllers
                     address = user.Address,
                     email = user.Email,
                     name = $"{user.FirstName} {user.LastName}",
-                    id = int.Parse(user.IdentityNumber)
+                    id = Int64.Parse(user.IdentityNumber)
                 };
                 await _govFolderService.RegisterCitizen(citizen);
 
@@ -68,7 +67,7 @@ namespace Auth.API.Controllers
 
         }
 
-        [HttpPost()]
+        [HttpPost]
         [Route("transferCitizen")]
         [AllowAnonymous]
         public async Task<IActionResult> RecieverCitizen(TransferDocDto transferUser)
@@ -80,6 +79,7 @@ namespace Auth.API.Controllers
                 var documents = (from d in transferUser.UrlDocuments
                                  select new DocumentDto
                                  {
+                                     Label= d.Key,
                                      Url = d.Value[0],
                                      Name = d.Key
                                  }).ToList();

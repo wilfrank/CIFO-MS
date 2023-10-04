@@ -85,3 +85,7 @@ CiFo-Sln/RequestDocument-API/obj/
 CiFo-Sln/UpdateDocument.API/bin/
 CiFo-Sln/UpdateDocument.API/obj/
 CiFo-Sln/SIFO-Notification-API/RequestDocument-API/obj/
+/CiFo-Sln/.vs/CiFo-Sln/v17/.futdcache.v2
+CiFo-Sln/Authorization.API/bin/
+CiFo-Sln/Gateway.API/bin/
+CiFo-Sln/SIFO-Notification-API/RequestDocument-API/bin/

@@ -5,7 +5,7 @@ namespace Cifo.Model.GovFolder
     public class CitizenDto : OperatorDto
     {
         [JsonPropertyName("id")]
-        public int? id { get; set; }
+        public Int64? id { get; set; }
         [JsonPropertyName("name")]
         public string? name { get; set; }
         [JsonPropertyName("address")]
