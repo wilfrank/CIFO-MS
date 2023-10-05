@@ -10,7 +10,7 @@ namespace Cifo.Service.Storage
         {
             _cloudStorageProvider = cloudStorageProvider;
         }
-        public Task<string> Upload(int userId, Stream file, string contentType, string fileName)
+        public Task<string> Upload(Int64 userId, Stream file, string contentType, string fileName)
         {
             return _cloudStorageProvider.Upload(userId, file, contentType, fileName);
         }

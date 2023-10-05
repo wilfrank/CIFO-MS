@@ -8,7 +8,7 @@ namespace Cifo.Model.Document
 {
     public class DocumentModel
     {
-        public int? IdUser { get; set; }
+        public Int64? IdUser { get; set; }
         public string? DocumentName { get; set; }
         public string? Status { get; set; }
         public string? URL { get; set; }

@@ -8,6 +8,6 @@ namespace Cifo.Service.Storage
 {
     public interface IStorageService
     {
-        Task<string> Upload(int userId, Stream file, string contentType, string fileName);
+        Task<string> Upload(Int64 userId, Stream file, string contentType, string fileName);
     }
 }

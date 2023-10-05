@@ -11,6 +11,6 @@ namespace Cifo.Model.Document
         public string? ImageString { get; set; }
         public string? ContentType { get; set; }
         public string? Name { get; set; }
-        public int? UserId { get; set; }
+        public Int64? UserId { get; set; }
     }
 }

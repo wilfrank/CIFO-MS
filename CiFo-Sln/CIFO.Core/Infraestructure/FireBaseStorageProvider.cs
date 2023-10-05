@@ -22,7 +22,7 @@ namespace CIFO.Core.Infraestructure
             _password = _configuration["Storage:Password"];
             _apiKey = _configuration["Storage:ApiKey"];
         }
-        public async Task<string> Upload(int userId, Stream file, string contentType, string fileName)
+        public async Task<string> Upload(Int64 userId, Stream file, string contentType, string fileName)
         {
             try
             {

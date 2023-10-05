@@ -5,7 +5,7 @@ namespace Cifo.Model
     public class OperatorDto
     {
         [JsonPropertyName("Id")]
-        public int? id { get; set; }
+        public Int64? id { get; set; }
         [JsonPropertyName("operatorId")]
         public int? operatorId { get; set; }
         [JsonPropertyName("operatorName")]
