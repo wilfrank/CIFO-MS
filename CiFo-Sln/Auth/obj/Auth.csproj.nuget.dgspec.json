@@ -1,0 +1,252 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Auth\\Auth.csproj": {}
+  },
+  "projects": {
+    "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Auth\\Auth.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Auth\\Auth.csproj",
+        "projectName": "Auth",
+        "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Auth\\Auth.csproj",
+        "packagesPath": "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\",
+        "outputPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Auth\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wilfrank.montalvop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj": {
+                "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj"
+              },
+              "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj": {
+                "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microex.Swagger": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj",
+        "projectName": "Cifo.Model",
+        "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj",
+        "packagesPath": "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\",
+        "outputPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wilfrank.montalvop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj",
+        "projectName": "Cifo.Service",
+        "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\Cifo.Service.csproj",
+        "packagesPath": "C:\\Users\\wilfrank.montalvop\\.nuget\\packages\\",
+        "outputPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\Cifo.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wilfrank.montalvop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj": {
+                "projectPath": "C:\\Personal\\Eafit\\ING_SIS_DIST\\Project\\CIFO-MS\\CiFo-Sln\\CiFo.Model\\Cifo.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Firebase.Auth": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.Azure.DocumentDB.Core": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.10.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
